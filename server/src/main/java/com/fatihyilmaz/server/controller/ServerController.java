@@ -15,7 +15,7 @@ public class ServerController {
 
     @GetMapping("/get-resource")
     public ResponseEntity<String> getResource() throws InterruptedException {
-        Thread.sleep(randomGenerator.nextInt(1000));
+        //Thread.sleep(randomGenerator.nextInt(1000));
         return ResponseEntity.ok("You got the resource");
     }
 }
